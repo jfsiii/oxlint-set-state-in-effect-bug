@@ -32,7 +32,7 @@ jobs:
         continue-on-error: true
 
       - name: "5. effect — deps, if/else branches (expect: error)"
-        run: pnpm lint -- src/effect-with-deps-conditional.tsx  --format=default
+        run: pnpm lint src/effect-with-deps-conditional.tsx  --format=default
         continue-on-error: true
 
       - name: "6. effect — deps, if only (expect: error)"
